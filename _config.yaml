@@ -4,13 +4,12 @@ phone: +91-9594304354
 social:
   - name: LinkedIn
     url: https://www.linkedin.com/in/devendra-pal-7223b210a
-
+description: Bookmark this to keep an eye on my project updates!
 content:
   - title: About
     layout: text
     content: |
       Results-driven professional with 8+ years of combined experience, including as a Data Scientist specializing in Machine Learning, NLP, MLOps, Computer Vision, and GenAI, and as a Machine Design & Application Engineer in HVAC. Skilled in delivering impactful AI and ML solutions across various industries, with a strong track record in implementing and optimizing advanced machine learning models, particularly ML and Generative AI, to drive business outcomes and operational efficiency.
-
   - title: Skills
     layout: list
     content:
@@ -32,7 +31,6 @@ content:
       - layout: left
         title: Databases
         description: SQL
-
   - title: Work Experience
     layout: list
     content:
@@ -77,7 +75,6 @@ content:
         caption: July 2015 - October 2016
         description: |
           - Worked on Enquires, estimation, project execution etc.
-
   - title: Projects
     layout: list
     content:
@@ -97,7 +94,6 @@ content:
         title: IIFL Legal Documents Agreement (OCR, NLP)
         description: |
           Led a project with two main components: implemented an OCR system using the docTR engine for document processing and developed an NLP solution using regular expressions to extract client names, registration numbers, and property details.
-
   - title: Education
     layout: list
     content:
@@ -105,7 +101,6 @@ content:
         title: BE in Mechanical Engineering
         sub_title: Mumbai University
         description: |
-
   - title: Certifications
     layout: list
     content:
