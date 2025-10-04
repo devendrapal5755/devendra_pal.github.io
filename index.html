@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devendra Pal | Data Scientist</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1>Devendra Pal</h1>
-    <h2>Data Scientist | ML Engineer | AI Engineer</h2>
-    <div class="contact">
-      <a href="mailto:Paldevendra93@gmail.com">📧 Paldevendra93@gmail.com</a> |
-      <a href="tel:+919594304354">📱 +91-9594304354</a> |
-      <a href="https://linkedin.com/in/devendra-pal-7223b210a" target="_blank">🔗 LinkedIn</a> |
-      <a href="https://github.com/devendrapal" target="_blank">💻 GitHub</a>
+  <header id="home">
+    <div class="hero-container">
+      <h1>Devendra Pal</h1>
+      <h2>Senior Data Scientist | AI Engineer | ML Engineer</h2>
+      <p>
+        <a href="mailto:Devendra.aiml@gmail.com">📧 Devendra.aiml@gmail.com</a> |
+        <a href="tel:+919594304354">📞 +91-9594304354</a> |
+        <a href="https://linkedin.com/in/devendra-pal-7223b210a" target="_blank">🔗 LinkedIn</a> |
+        <a href="https://github.com/devendrapal5755" target="_blank">💻 GitHub</a>
+      </p>
+      <a href="#about" class="btn">Explore My Work</a>
     </div>
   </header>
 
-  <section id="about">
-    <h3>About Me</h3>
+  <section id="about" class="section">
+    <h2>About Me</h2>
     <p>
-      Results-driven professional with 8+ years of experience in Machine Learning, NLP, MLOps, Computer Vision, and Generative AI.
-      Skilled in designing and deploying scalable ML/AI systems, optimizing model performance, and driving process efficiency.
-      Strong hands-on experience with Python, Hugging Face, Unsloth, LangChain, and large language models like Llama 3.1.
+      I am a results-driven Data Scientist with 8+ years of experience in Machine Learning, NLP, Computer Vision, MLOps, and Generative AI.
+      I have led AI-driven digital transformation projects that enhanced process efficiency, predictive maintenance, and automation across industries.
+      Currently at <b>TCG Digital</b>, I build advanced ML and GenAI models leveraging Llama 3.1, LangChain, and Retrieval-Augmented Generation (RAG) systems.
     </p>
   </section>
 
-  <section id="skills">
-    <h3>Technical Skills</h3>
+  <section id="skills" class="section bg-alt">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span>Python</span><span>Machine Learning</span><span>Deep Learning</span>
+      <span>Generative AI</span><span>LangChain</span><span>Unsloth</span>
+      <span>Hugging Face</span><span>FastAPI</span><span>Flask</span>
+      <span>MLOps</span><span>Docker</span><span>MLFlow</span>
+      <span>DVC</span><span>SQL</span><span>Computer Vision</span>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="entry">
+        <h3>Senior Data Scientist – TCG Digital</h3>
+        <span>Jun 2022 – Present</span>
+        <p>
+          Leading ML, NLP, and GenAI projects to drive industrial efficiency.  
+          Developed models like <b>Cata_LM</b> and <b>Reliable_AI</b> using Llama 3.1 and RAG for predictive maintenance and shutdown prevention.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>AI Engineer – Datten & Wissen</h3>
+        <span>Jun 2021 – Jun 2022</span>
+        <p>
+          Developed computer vision models for mosquito and PPE detection.  
+          Implemented OCR + NLP pipelines for document automation for clients like IIFL.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Junior Data Scientist – Prithvi.Ai</h3>
+        <span>Jan 2021 – Jun 2021</span>
+        <p>
+          Designed autoencoder-based anomaly detection models and contributed to polymer quality prediction systems.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Application & Design Engineer – Euroclima India</h3>
+        <span>Oct 2016 – Jan 2020</span>
+        <p>
+          Led AHU system design and engineering, ensuring optimal energy efficiency and process reliability.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-alt">
+    <h2>Selected Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Cata_LM (Generative AI)</h3>
+        <p>Fine-tuned Llama 3.1 on lab data (Alpaca format) to determine optimal proportions of Amorphous, Crystalline, and base metal for Hydrocracking.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Reliable_AI (RAG)</h3>
+        <p>Developed a RAG-based predictive system to identify plant shutdown risks and retrieve solutions from historical data using Llama 3.1.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Sodium Sulfate & Thiocyanate Prediction</h3>
+        <p>Implemented XGBoost and RF models with advanced feature engineering to predict target compound levels with high precision.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>IIFL Legal Document OCR (NLP)</h3>
+        <p>Used Hugging Face + docTR for OCR and regex-based NLP to extract registration details and property information with 91% accuracy.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education & Certifications</h2>
     <ul>
-      <li><b>Languages:</b> Python, R</li>
-      <li><b>ML Algorithms:</b> Linear, Logistic, Random Forest, XGBoost, LightGBM</li>
-      <li><b>Libraries & Tools:</b> NumPy, Pandas, Matplotlib, Hugging Face, YOLO, Unsloth, LangChain, Crewai</li>
-      <li><b>Frameworks:</b> Flask, FastAPI</li>
-      <li><b>MLOps:</b> MLflow, DVC, Docker, CI/CD, Git</li>
-      <li><b>Databases:</b> SQL, S3-Bucket</li>
-      <li><b>Other Tools:</b> Differential Evolution, DagsHub</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h3>Work Experience</h3>
-    <div class="job">
-      <h4>Data Scientist — TCG Digital (06/2022 – Present)</h4>
-      <ul>
-        <li>Led multiple ML, NLP, and GenAI projects improving process efficiency.</li>
-        <li>Key projects: NaSCN Prediction, Acid Prediction for HPCL, AML Case Extraction (NLP), Cata_LM (GenAI).</li>
-        <li>Fine-tuned Llama 3.1 models using Unsloth and Alpaca format for chemical optimization.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h4>AI Engineer — Datten & Wissen (06/2021 – 06/2022)</h4>
-      <ul>
-        <li>Developed computer vision systems for mosquito and safety equipment detection.</li>
-        <li>Implemented OCR + NLP for legal document extraction for IIFL.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h4>Junior Data Scientist — Prithvi.Ai (01/2021 – 06/2021)</h4>
-      <ul>
-        <li>Built autoencoder models for sensor-based alarm prediction.</li>
-        <li>Delivered actionable insights for polymer quality improvement.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h4>Application & Design Engineer — Euroclima India (10/2016 – 01/2020)</h4>
-      <ul>
-        <li>Designed AHU, copper piping, and ventilation systems.</li>
-        <li>Managed complete project lifecycle ensuring quality and delivery.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h3>Selected Projects</h3>
-    <ul>
-      <li>
-        <b>Cata_LM (Generative AI)</b> — Fine-tuned Llama 3.1 on lab data using Alpaca format to identify the most efficient process for CuSO4 production.
-      </li>
-      <li>
-        <b>Sodium Sulphate & Sodium Thiocyanate Prediction (ML)</b> — Used XGBoost, RF, and LightGBM with hyperparameter tuning for accurate prediction.
-      </li>
-      <li>
-        <b>Mosquito Detection in Video (Computer Vision)</b> — Object detection model with YOLO achieving mAP score of 0.69.
-      </li>
-      <li>
-        <b>IIFL Legal Document OCR</b> — Extracted key property information using OCR, NLP, and Hugging Face models with 91% accuracy.
-      </li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h3>Education</h3>
-    <p>BE in Mechanical Engineering – Mumbai University (2011–2015)</p>
-  </section>
-
-  <section id="certifications">
-    <h3>Certifications</h3>
-    <ul>
-      <li>PGD in Data Science & AI – Edvancer</li>
-      <li>Data Science GenAI – Coursera</li>
-      <li>TCGMcube Certificate – TCG Digital</li>
+      <li><b>BE in Mechanical Engineering</b> – Mumbai University</li>
+      <li><b>PGD in Data Science & AI</b> – Edvancer</li>
+      <li><b>Data Science GenAI</b> – Coursera</li>
+      <li><b>TCGMcube Certificate</b> – TCG Digital</li>
     </ul>
   </section>
 
   <footer>
     <p>© 2025 Devendra Pal | Built with ❤️ using GitHub Pages</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
