@@ -4,105 +4,345 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devendra Pal | Senior Data Scientist</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css"> <!-- Your friend's main.css -->
+    <link rel="stylesheet" href="style.css"> <!-- Merged slider styles -->
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Devendra Pal</a>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#home">Devendra Pal</a>
+            </div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="assets/profile.jpg" alt="Devendra Pal - Senior Data Scientist" class="profile-img">
-            <h1>Devendra Pal</h1>
-            <p>Senior Data Scientist</p>
-            <a href="assets/DevendraPal_Resume.pdf" download class="btn-resume">Download Resume</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
+    <!-- Hero / About -->
+    <div class="page-header" id="home" data-background-color="blue" style="background-image: url('assets/ai-bg.jpg');">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a results-driven Data Scientist with 8+ years of experience in Machine Learning, NLP, Computer Vision, and Generative AI. Currently at TCG Digital, I lead GenAI initiatives using Llama 3.1, LangChain, and RAG frameworks to optimize industrial processes and enhance predictive analytics.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <span><i class="fab fa-python"></i> Python</span>
-                <span><i class="fas fa-brain"></i> Machine Learning</span>
-                <span><i class="fas fa-layer-group"></i> Deep Learning</span>
-                <span><i class="fas fa-robot"></i> Generative AI</span>
-                <span><i class="fas fa-link"></i> LangChain</span>
-                <span><i class="fab fa-hugging-face"></i> Hugging Face</span>
-                <span><i class="fas fa-bolt"></i> FastAPI</span>
-                <span><i class="fas fa-flask"></i> Flask</span>
-                <span><i class="fas fa-cogs"></i> MLOps</span>
-                <span><i class="fab fa-docker"></i> Docker</span>
-                <span><i class="fas fa-chart-line"></i> MLFlow</span>
-                <span><i class="fas fa-database"></i> SQL</span>
-                <span><i class="fas fa-eye"></i> Computer Vision</span>
-                <span><i class="fas fa-rocket"></i> Unsloth</span>
-                <span><i class="fas fa-code-branch"></i> DVC</span>
+            <div class="content-center">
+                <div class="cc-profile-image">
+                    <a href="#"><img src="assets/profile.jpg" alt="Devendra Pal"></a>
+                </div>
+                <div class="h2 title">Devendra Pal</div>
+                <div class="h3 title">Senior Data Scientist</div>
+                <div class="h4 line-left">Currently at TCG Digital, Mumbai</div>
+                <a href="assets/DevendraPal_Resume.pdf" download class="btn btn-primary btn-round btn-lg">Download Resume</a>
             </div>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Selected Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Cata_LM (GenAI)</h3>
-                    <p>Fine-tuned Llama 3.1 to optimize Hydrocracking catalyst proportions using lab data (Alpaca format).</p>
-                </div>
-                <div class="project-card">
-                    <h3>Reliable_AI (RAG)</h3>
-                    <p>Built RAG-based system to predict plant shutdowns and fetch solutions via Llama 3.1 and historical data retrieval.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Sodium Sulfate & Thiocyanate Prediction</h3>
-                    <p>Implemented feature engineering and tuning for XGBoost/Random Forest models predicting compound formation.</p>
-                </div>
-                <div class="project-card">
-                    <h3>IIFL Legal Document OCR</h3>
-                    <p>OCR & NLP pipeline for extracting client and property data using docTR + regex + Hugging Face.</p>
+        <div class="section">
+            <div class="container" id="about">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="title">About Me</h4>
+                        <p class="category">Results-driven Data Scientist with 8+ years of experience in Machine Learning, NLP, Computer Vision, and Generative AI. Leading GenAI initiatives at TCG Digital using Llama 3.1, LangChain, and RAG to optimize processes and enhance analytics.</p>
+                        <h4 class="title">Basic Information</h4>
+                        <div class="card">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li><i class="now-ui-icons users_single-02"></i> Current Role: Senior Data Scientist</li>
+                                            <li><i class="now-ui-icons location_pin"></i> Location (Office): Mumbai, India</li>
+                                            <li><i class="now-ui-icons location_pin"></i> Location (Home): Mumbai, India</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li><i class="now-ui-icons text_caps-small"></i> Language: English, Hindi</li>
+                                            <li><i class="now-ui-icons ui-1_email-85"></i> Email: <a href="mailto:Devendra.aiml@gmail.com">Devendra.aiml@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact" class="section">
+    <!-- Skills -->
+    <div class="section" id="skills">
         <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-grid">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:Devendra.aiml@gmail.com">Devendra.aiml@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/devendra-pal-7223b210a">LinkedIn</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/devendrapal5755">GitHub</a></p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+919594304354">+91-9594304354</a></p>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="title">
+                        <h2 class="text-center">Professional Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                        <span class="progress-badge">Python</span>
+                        <div class="progress">
+                            <div class="progress-bar" data-value="95%"></div>
+                            <span class="progress-value">95%</span>
+                        </div>
+                    </div>
+                    <div class="progress-container progress-primary">
+                        <span class="progress-badge">Machine Learning</span>
+                        <div class="progress">
+                            <div class="progress-bar" data-value="90%"></div>
+                            <span class="progress-value">90%</span>
+                        </div>
+                    </div>
+                    <div class="progress-container progress-primary">
+                        <span class="progress-badge">Generative AI</span>
+                        <div class="progress">
+                            <div class="progress-bar" data-value="90%"></div>
+                            <span class="progress-value">90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                        <span class="progress-badge">NLP</span>
+                        <div class="progress">
+                            <div class="progress-bar" data-value="85%"></div>
+                            <span class="progress-value">85%</span>
+                        </div>
+                    </div>
+                    <div class="progress-container progress-primary">
+                        <span class="progress-badge">RAG & LangChain</span>
+                        <div class="progress">
+                            <div class="progress-bar" data-value="90%"></div>
+                            <span class="progress-value">90%</span>
+                        </div>
+                    </div>
+                    <div class="progress-container progress-primary">
+                        <span class="progress-badge">MLOps (Docker, FastAPI)</span>
+                        <div class="progress">
+                            <div class="progress-bar" data-value="85%"></div>
+                            <span class="progress-value">85%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    <!-- Experience -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="title">
+                        <h2 class="text-center">Work Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-plain">
+                            <div class="col-md-12">
+                                <h4 class="title">Senior Data Scientist<br><small class="category text-info">TCG Digital</small></h4>
+                                <p class="description">Aug 2023 - Present | Mumbai, India</p>
+                                <p class="description">Leading GenAI projects including fine-tuning LLMs and RAG implementations for industrial optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more experience cards as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Projects (with Swiper Slider) -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="title">
+                        <h2 class="text-center">Selected Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="news-slider">
+                <div class="swiper news-slider__wrp" id="projects-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">2024</span>
+                                </div>
+                                <h3 class="news__title">Cata_LM (GenAI)</h3>
+                                <p class="news__txt">Fine-tuned Llama 3.1 to optimize Hydrocracking catalyst proportions using lab data (Alpaca format).</p>
+                                <div class="news__img"><img src="https://via.placeholder.com/400x200?text=Cata_LM" alt="Project"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">2024</span>
+                                </div>
+                                <h3 class="news__title">Reliable_AI (RAG)</h3>
+                                <p class="news__txt">Built RAG-based system to predict plant shutdowns and fetch solutions via Llama 3.1 and historical data.</p>
+                                <div class="news__img"><img src="https://via.placeholder.com/400x200?text=Reliable_AI" alt="Project"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">2023</span>
+                                </div>
+                                <h3 class="news__title">Sodium Sulfate Prediction</h3>
+                                <p class="news__txt">Feature engineering and tuning for XGBoost/Random Forest models predicting compound formation.</p>
+                                <div class="news__img"><img src="https://via.placeholder.com/400x200?text=Sodium" alt="Project"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news__item">
+                                <div class="news-date">
+                                    <span class="news-date__title">2023</span>
+                                </div>
+                                <h3 class="news__title">IIFL Legal Document OCR</h3>
+                                <p class="news__txt">OCR & NLP pipeline for extracting data using docTR + regex + Hugging Face.</p>
+                                <div class="news__img"><img src="https://via.placeholder.com/400x200?text=IIFL" alt="Project"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-slider__ctr">
+                        <button class="news-slider__arrow news-slider-prev">
+                            <svg class="icon-font" viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                            </svg>
+                        </button>
+                        <button class="news-slider__arrow news-slider-next">
+                            <svg class="icon-font" viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="news-slider__pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="title">
+                        <h2 class="text-center">Education</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">B.Tech in Computer Science</h4>
+                                <p class="category text-info">Your University | 2015 - 2019</p>
+                                <p class="card-description">Focused on AI/ML foundations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more if needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="title">
+                        <h2 class="text-center">Contact</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info">
+                        <div class="icon icon-primary">
+                            <i class="now-ui-icons ui-1_email-85"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Email</h4>
+                            <p class="description">Devendra.aiml@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info">
+                        <div class="icon icon-primary">
+                            <i class="now-ui-icons users_single-02"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">LinkedIn</h4>
+                            <p class="description"><a href="https://linkedin.com/in/devendra-pal-7223b210a">linkedin.com/in/devendra-pal</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info">
+                        <div class="icon icon-primary">
+                            <i class="now-ui-icons media-2_sound-wave"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">GitHub</h4>
+                            <p class="description"><a href="https://github.com/devendrapal5755">github.com/devendrapal5755</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info">
+                        <div class="icon icon-primary">
+                            <i class="now-ui-icons ui-1_phone-91"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Phone</h4>
+                            <p class="description">+91-9594304354</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+                    <li><a href="https://twitter.com/devendrapal">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/devendra-pal-7223b210a">LinkedIn</a></li>
+                </ul>
+            </nav>
+            <div class="copyright pull-right">© 2025 <a href="#">Devendra Pal</a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="now-ui-kit.js"></script> <!-- Your friend's JS -->
+    <script src="script.js"></script> <!-- Merged slider script -->
 </body>
 </html>
